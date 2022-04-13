@@ -1,0 +1,342 @@
+/* tipografia importada desde Google para utilizar en distintas secciones del sitio */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+
+/* estilo general */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* estilo menu nav */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  height: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1a0cd7;
+  color: white;
+}
+
+
+/* estilo planetas html */
+
+main.galeria {
+    padding: 2rem;
+  }
+  
+  .galeria > h1 {
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: 100;
+  }
+
+  .galeria > h2 {
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: 100;
+  }
+  
+  .galeria > .listaGaleria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+  }
+  
+  .galeria > .listaGaleria > li:nth-child(4n) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .galeria > .listaGaleria > li:nth-child(8n) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+  
+  .galeria > .listaGaleria > li > figure {
+    height: 100%;
+  }
+  
+  .galeria > .listaGaleria > li > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  /* inicio pagina index html */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  background-color: #000000;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+}
+
+/* estilos para el hero */
+.hero {
+  background: url('https://techcrunch.com/wp-content/uploads/2021/10/Space-Perspective-offers-a-radically-gentle-journey-20-miles-above.jpg') center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  /* Estilos GRID */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+.hero > * {
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hero > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.hero > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* estilos planetas */
+.planetas {
+  padding: 2rem;
+}
+
+.planetas > ul {
+  display: grid;    
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.planetas > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.planetas > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.planetas > ul > li > figure > img {
+  width: 100%;
+}
+
+.planetas > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 80%;
+  width: 100%;
+}
+
+.planetas > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.planetas > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #000000;
+}
+
+.planetas > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+/* footer */
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.footer-bottom{
+  background: #000;
+  max-width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+ color:#44bae8;
+ font-size: 16px;
+ text-decoration: none;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
+
+.footer-menu{
+  float: right;
+}
+
+.footer-menu ul{
+  display: flex;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover{
+  color: #000000;
+}
+
+
+/* A continuacion, estilos para la pagina de contacto */
+
+.formulario-contacto{
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto label {
+  display: block;
+}
+
+
+/* Estilo para los elementos del formulario de contacto */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Permite modificar el cuadro de texto verticalmente */
+}
+
+/* Estilo para el boton de Enviar */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Cuando posicionamos el cursor sobre el boton, se ve un color verde mas oscuro */
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
